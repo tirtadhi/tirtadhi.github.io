@@ -2,206 +2,178 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="google-site-verification" content="lKVJ3_8agV_OLEfYbb1fpQIop1sLCriqbN7tXs6Eaoo" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Tirta Adhi Samsara">
-    <meta data-react-helmet="true" http-equiv="x-ua-compatible" content="ie=edge">
-    <link data-react-helmet="true" rel="preconnect" href="https://tirtadhi.github.io">
-    <link data-react-helmet="true" rel="og:site_name" href="https://tirtadhi.github.io">
-    <link data-react-helmet="true" rel="og:title" href="Tirta adhi">
-    <meta data-react-helmet="true" property="og:type" content="website">
-    <meta data-react-helmet="true" property="og:url" content="https://tirtadhi.github.io">
-    <meta name="author" content="Tirta Adhi Samsara">
-    <title>Tirtadhi</title>
-    <!--My CSS-->
-    <link rel="stylesheet" href="assets/style.css" />
-    <!--icon-->
-    <link rel="shortcut icon" href="/assets/img/icon.ico" />
-    <!--Bootstrap CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+    <title>Tirta & Azizi Wedding</title>
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <!--Font google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@100;300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="/img/bg_header.ico" />
+
+    <!--SimplyCountdown-->
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+    <script src="countdown/simplyCountdown.min.js"></script>
+
+    <!--CSS GUA-->
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body style="background-color: #3e4346">
-    <!--Jumbotron-->
-    <section>
+  <body>
+    <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
+      <main>
+        <h4>Kepada Bapak/Ibu/Saudara/i,</h4>
+        <h1>Tirta & Zee</h1>
+        <p>Akan melangsungkan resepsi pernikahan dalam:</p>
+        <div class="simply-countdown"></div>
+        <a href="#undangan" class="btn btn-lg mt-4">Lihat Undangan</a>
+      </main>
+    </section>
+
+    <!--Navbar-->
+
+    <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">Tirta & Zee</a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Tirta & Zee</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#info">Info</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#rsvp">RSVP</a>
+              <a class="nav-link" href="#gifts">Gifts</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="home">
       <div class="container">
         <div class="row justify-content-center">
-          <!--PROFIL-->
-          <div class="col mx-auto">
-            <h3 class="name d-flex justify-content-center" style="color: white">Tirta Adhi Samsara</h3>
-            <img class="img mx-auto d-block rounded-circle" src="https://avatars.githubusercontent.com/u/80134935?v=4" alt="Tirtadhi" width="200" />
-            <p class="pt-2 d-flex justify-content-center" style="color: white">
-              Mahasiswa Teknik Informatika UNPAM.<br />
-              Hobi bermain catur, dan gemar mencoba hal baru.
-            </p>
-            <p class="buuton pt-2 d-flex justify-content-center" style="color: white">
-              <a href="https://www.instagram.com/tirtadhi/"><button type="button" class="btn btn-secondary">Say Hi!</button></a>
-            </p>
+          <div class="col-md-8 text-center">
+            <h2>Acara Pernikahan</h2>
+            <h3>Diselenggarakan pada 11 Agustus 2023 di The Ritz-Carlton Jakarta, Pacific Place, Jakarta</h3>
+            <p>Oleh karena itu, dengan segala hormat, kami mengundang bermaksud untuk mengundang Bapak/Ibu, Saudara/i, untuk hadir pada acara pernikahan kami.</p>
+          </div>
+        </div>
+
+        <div class="row couple">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-8 text-end">
+                <h3>Tirta Adhi Samsara</h3>
+                <p>Mahasiswa T. Informatika Universitas Pamulang</p>
+                <p>
+                  Putra dari Bpk. Andi <br />
+                  dan <br />
+                  Ibu Mirah
+                </p>
+              </div>
+              <div class="col-4">
+                <img src="img/tirta.jpg" alt="Tirta Adhi Samsara" class="img-responsive rounded-circle" />
+              </div>
+            </div>
           </div>
 
-          <!--NAVBAR-->
-          <div class="col">
-            <nav class="nav-list">
-              <ul>
-                <li><a href="#blog" onclick="showBlog()">Blog</a></li>
-                <li><a href="#Achiev" onclick="showAchiev()" onclick="hideBlog()">Achievement</a></li>
-                <li><a href="#Porto" onclick="showPorto()">Portfolio</a></li>
-              </ul>
-            </nav>
-
-            <!--BLOG-->
-            <main id="blog">
-              <a href="https://www.kompasiana.com/tirtaadhisamsara6452/645e2c864addee3134604722/penambahan-kata-ambis-ke-dalam-kbbi" style="text-decoration: none">
-                <div class="card shadow mb-3" style="max-width: 540px; background-color: #3e4346">
-                  <div class="row g-0">
-                    <div class="col-md-4">
-                      <img src="/assets/img/artikel.jpg" class="img-fluid rounded-start" alt="ilutraasi" />
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title" style="color: white">Penambahan Kata 'AMBIS' ke Dalam KBBI</h5>
-                        <p class="card-text" style="color: white">Usulan penambahan kata "ambis" ke KBBI masih kontroversial. Penggunaan umum namun informal, perlu pertimbangan lebih lanjut.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href="https://www.kompasiana.com/tirtaadhisamsara6452/645f8c4908a8b50f281d6fb2/perkuat-identitas-bangsa-melalui-penggunaan-bahasa-indonesia-yang-baik-dan-benar" style="text-decoration: none">
-                <div class="card shadow mb-3" style="max-width: 540px; background-color: #3e4346">
-                  <div class="row g-0">
-                    <div class="col-md-4">
-                      <img src="/assets/img/artikel.jpg" class="img-fluid rounded-start" alt="Ilustrasi" />
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title" style="color: white">Perkuat Identitas Bangsa Melalui Penggunaan Bahasa Indonesia yang Baik dan Benar</h5>
-                        <p class="card-text" style="color: white">Pentingnya Bahasa Indonesia: identitas bangsa, komunikasi global, dan upaya meningkatkan penggunaan serta pengembangan bahasa.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </main>
-
-            <!--Achievement-->
-            <main id="Achiev">
-              <a
-                href="https://www.linkedin.com/feed/update/urn:li:activity:7032406881990049792?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7032406881990049792%29&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BSbANeHY1QiGQvIj6oWdejw%3D%3D"
-                style="text-decoration: none"
-              >
-                <div class="card shadow mb-3" style="max-width: 540px; background-color: #3e4346">
-                  <div class="row g-0">
-                    <div class="col-md-4">
-                      <img src="/assets/img/alibaba.jpg" class="img-fluid rounded-start" alt="alibaba" />
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title" style="color: white">Alibaba Cloud Dev Summit 2023</h5>
-                        <p class="card-text" style="color: white">Berkesempatan mengikuti event Alibaba Cloud Dev Summit 2023</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href="https://www.instagram.com/p/B4jzZKlAhCY/" style="text-decoration: none">
-                <div class="card shadow mb-3" style="max-width: 540px; background-color: #3e4346">
-                  <div class="row g-0">
-                    <div class="col-md-4">
-                      <img src="/assets/img/smafair.jpg" class="img-fluid rounded-start" alt="SMAFAIR" />
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title" style="color: white">SMA FAIR 2019</h5>
-                        <p class="card-text" style="color: white">Menampilkan seni bela diri BEKSI dalam acara SMA FAIR 2019</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </main>
-
-            <!--Portfolio-->
-            <main id="Porto">
-              <a href="/assets/Undangan nikah/index.html" style="text-decoration: none">
-                <div class="card shadow mb-3" style="max-width: 540px; background-color: #3e4346">
-                  <div class="row g-0">
-                    <div class="col-md-4">
-                      <img src="/assets/Undangan nikah/img/bg.jpg" class="img-fluid rounded-start" alt="JCC" width="100%" />
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title" style="color: white">Website Undangan Nikah</h5>
-                        <p class="card-text" style="color: white">Menyebarkan undangan nikah secara online</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href="/assets/Quiz kemerdekaan/index.html" style="text-decoration: none">
-                <div class="card shadow mb-3" style="max-width: 540px; background-color: #3e4346">
-                  <div class="row g-0">
-                    <div class="col-md-4">
-                      <img src="/assets/img/quizz.jpg" class="img-fluid rounded-start" alt="JCC" width="100%" />
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title" style="color: white">Game Quiz Kemerdekaan</h5>
-                        <p class="card-text" style="color: white">Game yang melatih kemampuan kamu seputar kemerdekaan</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href="/assets/Quiz kemerdekaan/index.html" style="text-decoration: none">
-                <div class="card shadow mb-3" style="max-width: 540px; background-color: #3e4346">
-                  <div class="row g-0">
-                    <div class="col-md-4">
-                      <img src="/assets/img/animasi.png" class="img-fluid rounded-start" alt="JCC" width="100%" />
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title" style="color: white">Ucup Beli Seblak</h5>
-                        <p class="card-text" style="color: white">Video Animasi 2D</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href="https://www.instagram.com/p/CsiuL9UOjmV/" style="text-decoration: none">
-                <div class="card shadow mb-3" style="max-width: 540px; background-color: #3e4346">
-                  <div class="row g-0">
-                    <div class="col-md-4">
-                      <img src="/assets/img/DIA.png" class="img-fluid rounded-start" alt="DIA" width="100%" />
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title" style="color: white">"DIA"</h5>
-                        <p class="card-text" style="color: white">Video yang menggunakan backsound Puisi "DIA" by Freyanashifa Jayawardhana</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              <a href="https://www.instagram.com/reel/CZvM5Jvl4yS/" style="text-decoration: none">
-                <div class="card shadow mb-3" style="max-width: 540px; background-color: #3e4346">
-                  <div class="row g-0">
-                    <div class="col-md-4">
-                      <img src="/assets/img/JCC.png" class="img-fluid rounded-start" alt="JCC" width="100%" />
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title" style="color: white">TRIP TO JCC</h5>
-                        <p class="card-text" style="color: white">Video vlog study tour ke JCC (Jakarta Convention Center)</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </main>
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-4">
+                <img src="img/zee.jpg" alt="Azizi shafaa Asadel" class="img-responsive rounded-circle" />
+              </div>
+              <div class="col-8">
+                <h3>Azizi shafaa Asadel</h3>
+                <p>Mahasiswi Seni Kuliner Universitas Pradita</p>
+                <p>
+                  Putra dari Bpk. Fadli <br />
+                  dan <br />
+                  Ibu Nur
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    <script src="/assets/script.js"></script>
+
+    <section id="info" class="info">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Informasi Acara</h2>
+            <p class="alamat">Alamat: SUDIRMAN CENTRAL BUSINESS DISTRICT (SCBD), JL. JENDRAL SUDIRMAN KAV. 52-53, JAKARTA, INDONESIA, 12190</p>
+            <a href="https://goo.gl/maps/UtncCpVW7kZ5xyji6" target="_blank" class="btn btn-light btn-sm my-4">Klik untuk membuka peta</a>
+            <p class="description">Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba di tujuan namun tidak ada tanda-tanda sedang dilangsungkan pernikahan, boleh jadi Anda salah jadwal atau salah tempat</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light mb-5">
+              <div class="card-header">Akad Nikah</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>08.00 - 10.00</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span>Jumat, 11 Agustus 2023</span>
+                  </div>
+                </div>
+                <div class="card-footer">Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan dan kekhusyuan seluruh proses.</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light">
+              <div class="card-header">Resepsi</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>13.00 - selesai</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span>Jumat, 11 Agustus 2023</span>
+                  </div>
+                </div>
+                <div class="card-footer">Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan dan kekhusyuan seluruh proses.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <script>
+      simplyCountdown(".simply-countdown", {
+        year: 2023, // required
+        month: 8, // required
+        day: 11, // required
+        hours: 8, // Default is 0 [0-23] integer
+        words: {
+          //words displayed into the countdown
+          days: { singular: "hari", plural: "hari" },
+          hours: { singular: "jam", plural: "jam" },
+          minutes: { singular: "menit", plural: "menit" },
+          seconds: { singular: "detik", plural: "detik" },
+        },
+      });
+    </script>
   </body>
 </html>
