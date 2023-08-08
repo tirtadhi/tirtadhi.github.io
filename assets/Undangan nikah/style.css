@@ -4,10 +4,6 @@
   --shadow: 0 2px 2px rgb(0 0 0/0.5);
 }
 
-html{
-  overflow-x: hidden;
-}
-
 body {
   font-size: 1.2rem;
   font-family: "Work Sans", sans-serif;
