@@ -18,6 +18,8 @@ body {
   height: 100%;
   background-image: url(img/bg.jpg);
   z-index: -1;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero {
