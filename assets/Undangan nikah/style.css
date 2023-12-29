@@ -1,12 +1,13 @@
 :root {
-  --pink: #da307a;
+  --pink: #f14e95;
   --bg: #0a0a0a;
-  --shadow: 0 2px 2px rgb(0 0 0/0.5);
+  --shadow: 0 2px 2px rgb(0 0 0 /0.5);
 }
 
 body {
   font-size: 1.2rem;
   font-family: "Work Sans", sans-serif;
+  min-height: 4000px;
 }
 
 .hero::before {
@@ -17,13 +18,13 @@ body {
   width: 100%;
   height: 100%;
   background-image: url(img/bg.jpg);
-  z-index: -1;
   background-size: cover;
   background-position: center;
+  z-index: -1;
+  filter: grayscale();
 }
 
 .hero {
-  position: relative;
   min-height: 100vh;
 }
 
@@ -53,8 +54,8 @@ body {
 }
 
 .hero a:hover {
-  background-color: var(--pink);
   color: white;
+  background-color: var(--pink);
 }
 
 .mynavbar {
@@ -82,12 +83,14 @@ body {
   background-size: cover;
   min-height: 100vh;
   margin-top: -6rem;
-  padding-top: 15rem;
-  padding-bottom: 5rem;
+  padding: 15rem;
 }
 
 .home h2,
-.info h2 {
+.info h2,
+.gallery h2,
+.rsvp h2,
+.gifts h2 {
   color: var(--pink);
   font-family: "Sacramento";
   font-size: 5rem;
@@ -98,13 +101,11 @@ body {
   color: #444;
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  font-weight: 600;
 }
 
 .home p {
   font-size: 1.1rem;
   color: #666;
-  font-weight: 500;
 }
 
 .home .couple {
@@ -112,13 +113,30 @@ body {
 }
 
 .home .couple h3 {
+  color: var(--pink);
   font-family: "Sacramento";
   font-size: 2.4rem;
-  color: var(--pink);
 }
 
 .home .couple img {
   width: 100%;
+}
+
+.home .heart {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(65px);
+}
+
+.home .heart i {
+  margin: auto;
+  color: var(--pink);
 }
 
 .info {
@@ -140,7 +158,7 @@ body {
 .info .card {
   background-color: rgba(255, 255, 255, 0.2) !important;
   color: white !important;
-  border: 1px solid #000;
+  border: 1px solid #999;
 }
 
 .info .card-header {
@@ -159,7 +177,188 @@ body {
   font-weight: 300;
 }
 
-/*Media Query*/
+.gallery,
+.rsvp,
+.gifts {
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+
+.gallery span,
+.gifts span {
+  text-transform: uppercase;
+  color: #666;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.gallery p .rsvp p,
+.gifts p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.timeline {
+  list-style: none;
+  padding: 1.4rem 0;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  width: 1px;
+  background-color: #ccc;
+  left: 50%;
+}
+
+.timeline li {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.timeline li::before,
+.timeline li::after {
+  content: "";
+  display: table;
+}
+
+.timeline li::after {
+  clear: both;
+}
+
+.timeline li .timeline-image {
+  width: 160px;
+  height: 160px;
+  background-color: #ccc;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.timeline li .timeline-panel {
+  width: 40%;
+  float: left;
+  border: 1px solid #ccc;
+  padding: 2rem;
+  position: relative;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.timeline li .timeline-panel::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  top: 80px;
+  right: -15px;
+}
+
+.timeline li .timeline-panel::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border-top: 14px solid transparent;
+  border-left: 14px solid white;
+  border-right: 0 solid white;
+  border-bottom: 14px solid transparent;
+  top: 81px;
+  right: -13px;
+}
+
+.timeline li.timeline-inverted .timeline-panel {
+  float: right;
+}
+
+.timeline li.timeline-inverted .timeline-panel::before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+
+.timeline li.timeline-inverted .timeline-panel::after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -13px;
+  right: auto;
+}
+
+.gallery {
+  background-color: #f5f5f5;
+}
+
+.rsvp {
+  background-color: var(--bg);
+}
+
+.rsvp h2 {
+  font-size: 4.5rem;
+}
+
+.rsvp p {
+  color: white;
+}
+
+.rsvp form label {
+  color: white;
+}
+
+.rsvp button {
+  background-color: var(--pink);
+  color: white;
+  border: 1px solid var(--pink);
+}
+
+.rsvp button:hover {
+  background-color: white;
+  color: var(--pink);
+  border: 1px solid white;
+}
+
+footer {
+  padding: 3rem;
+  background-color: var(--pink);
+  color: white;
+}
+
+footer a {
+  color: var(--bg);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+}
+
+footer li {
+  list-style: none;
+  display: inline;
+  margin: 0.5rem;
+}
+
+/* Media Query */
+/* Extraaa large */
+@media (max-width: 1200px) {
+  .home .heart {
+    transform: translateX(-50%) translateY(45px);
+  }
+}
+
 /* laptop */
 @media (max-width: 992px) {
   html {
@@ -170,11 +369,40 @@ body {
     padding: 70px;
   }
 
-  .mynavbar .nav-link {
-    font-size: 2rem;
-    text-align: center;
+  .home .heart {
+    display: none;
+  }
+
+  .timeline::before {
+    left: 60px;
+  }
+
+  .timeline li .timeline-image {
+    left: 15px;
+    margin-left: 45px;
+    top: 16px;
+  }
+
+  .timeline li .timeline-panel {
+    width: calc(100% + 200px);
+    float: right;
+  }
+
+  .timeline li .timeline-panel::before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+
+  .timeline li .timeline-panel::after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -13px;
+    right: auto;
   }
 }
+
 /* tablet */
 @media (max-width: 768px) {
   html {
@@ -185,7 +413,22 @@ body {
     padding: 60px;
     margin: 5px;
   }
+
+  .mynavbar .nav-link {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .sticty-top {
+    overflow: hidden;
+  }
+
+  .timeline li .timeline-image {
+    width: 140px;
+    height: 140px;
+  }
 }
+
 /* mobile phone */
 @media (max-width: 576px) {
   html {
@@ -193,7 +436,25 @@ body {
   }
 
   .simply-countdown > .simply-section {
-    padding: 35px;
+    padding: 45px;
     margin: 3px;
+  }
+
+  .timeline li .timeline-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .timeline li .timeline-panel {
+    width: 65%;
+    transform: translateX(-20%);
+  }
+
+  .timeline li .timeline-panel::before {
+    top: 30px;
+  }
+
+  .timeline li .timeline-panel::after {
+    top: 31px;
   }
 }
