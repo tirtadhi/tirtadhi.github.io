@@ -271,30 +271,30 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="/assets/script.js"></script>
     <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    // Ambil semua tautan di navbar
-    const navLinks = document.querySelectorAll(".nav-list a");
+      document.addEventListener("DOMContentLoaded", function () {
+        // Ambil semua tautan di navbar
+        const navLinks = document.querySelectorAll(".nav-list a");
 
-    // Loop melalui setiap tautan dan tambahkan event listener
-    navLinks.forEach(function (navLink) {
-      navLink.addEventListener("click", function (event) {
-        // Hentikan event default dari tautan
-        event.preventDefault();
+        // Loop melalui setiap tautan dan tambahkan event listener
+        navLinks.forEach(function (navLink) {
+          navLink.addEventListener("click", function (event) {
+            // Hentikan event default dari tautan
+            event.preventDefault();
 
-        // Ambil id tujuan dari tautan
-        const targetId = this.getAttribute("href").substring(1);
+            // Ambil id tujuan dari tautan
+            const targetId = this.getAttribute("href").substring(1);
 
-        // Sembunyikan semua konten utama kecuali yang sesuai dengan id tujuan
-        document.querySelectorAll("main").forEach(function (main) {
-          if (main.id === targetId) {
-            main.classList.remove("hidden");
-          } else {
-            main.classList.add("hidden");
-          }
+            // Sembunyikan semua konten utama kecuali yang sesuai dengan id tujuan
+            document.querySelectorAll("main").forEach(function (main) {
+              if (main.id === targetId) {
+                main.style.display = "block";
+              } else {
+                main.style.display = "none";
+              }
+            });
+          });
         });
       });
-    });
-  });
-</script>
+    </script>
   </body>
 </html>
