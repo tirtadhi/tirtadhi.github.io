@@ -39,3 +39,7 @@ section .nav-list li:hover a {
 .card:hover {
   transform: translateY(10px);
 }
+
+main.hidden {
+  display: none;
+}
