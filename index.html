@@ -294,8 +294,16 @@
         });
       });
     });
+
+    // Sembunyikan semua konten utama kecuali yang pertama kali di-load (blog)
+    document.querySelectorAll("main").forEach(function (main, index) {
+      if (index !== 0) {
+        main.classList.add("hidden");
+      }
+    });
   });
 </script>
+
 
 
   </body>
