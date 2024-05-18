@@ -1,0 +1,179 @@
+section {
+  padding-top: 5rem;
+}
+.gradient-text {
+  background: linear-gradient(45deg, #ff00ff, #00ffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-btn {
+  background: linear-gradient(45deg, #ba56f4, #0073ff);
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gradient-btn:hover {
+  opacity: 0.8; /* Decrease opacity on hover */
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.8); /* Replace with your desired color and opacity */
+}
+
+/* Add this CSS to style the navbar items on hover */
+.navbar-nav .nav-item .nav-link {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  background: linear-gradient(45deg, #ba56f4, #0073ff); /* Adjust the background color as needed */
+  border-radius: 5px; /* Optional: Add border radius for a rounded effect */
+}
+
+#hero {
+  height: 100vh;
+  background: url("/src/img/stars.png") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+#hero .container {
+  display: flex;
+  align-items: center;
+}
+
+#hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+#hero p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+#hero .btn-primary {
+  border: none;
+}
+
+#hero img {
+  max-width: 100%;
+  height: auto;
+}
+
+#about {
+  background: url("/src/img/stars.png") no-repeat center center;
+  background-size: cover;
+  color: white; /* Ensure text is readable */
+  padding: 60px 0; /* Add padding to give some space inside the section */
+}
+
+#about .container {
+  background: rgba(53, 54, 54, 0.6); /* Optional: Add a semi-transparent background to improve text readability */
+  padding: 30px; /* Add padding inside the container */
+  border-radius: 10px; /* Optional: Add rounded corners to the container */
+}
+
+#about h2,
+#about p,
+#about h3 {
+  color: white; /* Ensure all text is white */
+}
+
+.social-icon {
+  color: rgb(122, 122, 122);
+  transition: color 0.3s ease, transform 0.3s ease;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.social-icon:hover {
+  color: #a795ef;
+}
+
+#sertif {
+  background: url("/src/img/stars.png") no-repeat center center;
+  background-size: cover;
+  color: white; /* Ensure text is readable */
+  padding: 60px 0; /* Add padding to give some space inside the section */
+}
+
+#sertif .container {
+  background: rgba(53, 54, 54, 0.6); /* Optional: Add a semi-transparent background to improve text readability */
+  padding: 30px; /* Add padding inside the container */
+  border-radius: 10px; /* Optional: Add rounded corners to the container */
+}
+
+#footer {
+  background: url("/src/img/stars.png") no-repeat center center;
+  background-size: cover;
+  padding: 60px 0; /* Add padding to give some space inside the section */
+}
+
+@keyframes spectrum {
+  0% {
+    box-shadow: 0 0 15px #ff0000;
+  }
+  10% {
+    box-shadow: 0 0 15px #ff0000;
+  }
+  20% {
+    box-shadow: 0 0 15px #ff7f00;
+  }
+  30% {
+    box-shadow: 0 0 15px #ffff00;
+  }
+  40% {
+    box-shadow: 0 0 15px #00ff00;
+  }
+  50% {
+    box-shadow: 0 0 15px #00ff7f;
+  }
+  60% {
+    box-shadow: 0 0 15px #0000ff;
+  }
+  70% {
+    box-shadow: 0 0 15px #8a2be2;
+  }
+  80% {
+    box-shadow: 0 0 15px #ff00ff;
+  }
+  90% {
+    box-shadow: 0 0 15px #ff1493;
+  }
+  100% {
+    box-shadow: 0 0 15px #ff0000;
+  }
+}
+
+.spectrum-animation {
+  border-radius: 50%;
+  animation: spectrum 4s linear infinite;
+}
+
+#projects {
+  background: url("/src/img/stars.png") no-repeat center center;
+  background-size: cover;
+  color: white; /* Ensure text is readable */
+  padding: 60px 0; /* Add padding to give some space inside the section */
+}
+
+/* Media query for screens less than 992px */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.266); /* Adjust as needed */
+  }
+
+  .navbar-nav .nav-link {
+    color: white; /* Ensure text is readable */
+  }
+}
