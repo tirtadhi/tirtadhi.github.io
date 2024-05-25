@@ -148,7 +148,7 @@ section {
 /* end footer */
 /* scroll bar */
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 13px;
 }
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(45deg, #ff00ff, #00ffff);
