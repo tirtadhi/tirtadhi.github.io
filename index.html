@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- meta tags -->
+    <meta
+      name="description"
+      content="Tirta Adhi Samsara - Web Developer dan Cyber Security Enthusiast. Temukan karya dan pengalaman saya dalam pengembangan web dan keamanan dunia maya."
+    />
+    <meta
+      name="keywords"
+      content="Tirta Adhi Samsara, Web Developer, Cyber Security, Programmer, Developer, Teknologi, Keamanan Cyber, Portfolio Web, LinkedIn, GitHub, Instagram"
+    />
+    <meta name="author" content="Tirta Adhi Samsara" />
+    <meta
+      property="og:title"
+      content="Tirta Adhi Samsara - Web Developer | Cyber Security Enthusiast"
+    />
+    <meta
+      property="og:description"
+      content="Portfolio pribadi Tirta Adhi Samsara, seorang Web Developer dan Cyber Security Enthusiast yang berbagi pengalaman serta karya-karya dalam bidang teknologi."
+    />
+    <meta property="og:image" content="/assets/img/pp.webp" />
+    <meta property="og:url" content="https://tirtadhi.site" />
+    <meta
+      name="twitter:title"
+      content="Tirta Adhi Samsara - Web Developer | Cyber Security Enthusiast"
+    />
+    <meta
+      name="twitter:description"
+      content="Portfolio pribadi Tirta Adhi Samsara, seorang Web Developer dan Cyber Security Enthusiast yang berbagi pengalaman serta karya-karya dalam bidang teknologi."
+    />
+    <meta name="twitter:image" content="/assets/img/pp.webp" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="robots" content="index, follow" />
+    <meta name="google-site-verification" content="your-verification-code" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tirtadhi</title>
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- ICON -->
+    <link rel="shortcut icon" href="/assets/img/icon.ico" />
+    <!-- boostrap icon -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container py-5">
+      <div class="row">
+        <!-- Kolom Kiri (Profil) -->
+        <div class="col-lg-4 mb-4">
+          <div class="card text-center p-4 shadow">
+            <img
+              src="/assets/img/pp.webp"
+              alt="Profile Picture"
+              class="rounded-circle mx-auto d-block"
+              width="120"
+            />
+            <h2 class="mt-3">Tirta Adhi Samsara</h2>
+            <p class="text-muted">Web Developer | Cyber Security Enthusiast</p>
+            <p><i class="fas fa-map-marker-alt"></i> Tangerang, Indonesia</p>
+            <p></p>
+
+            <div class="socials">
+              <a
+                href="https://www.linkedin.com/in/tirtaadhisamsara"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin"></i> LinkedIn
+              </a>
+              <a href="https://github.com/tirtadhi" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="https://instagram.com/tirtadhi" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+              </a>
+            </div>
+
+            <button id="toggleMode" class="btn btn-secondary mt-3">
+              🌙 Switch Theme
+            </button>
+          </div>
+        </div>
+
+        <!-- Kolom Kanan -->
+        <div class="right-column">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link active"
+                id="resume-tab"
+                data-bs-toggle="tab"
+                href="#resume"
+                role="tab"
+                aria-controls="resume"
+                aria-selected="true"
+                >Resume</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="portfolio-tab"
+                data-bs-toggle="tab"
+                href="#portfolio"
+                role="tab"
+                aria-controls="portfolio"
+                aria-selected="false"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="sertif-tab"
+                data-bs-toggle="tab"
+                href="#sertif"
+                role="tab"
+                aria-controls="sertif"
+                aria-selected="false"
+                >Certificate</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="contact-tab"
+                data-bs-toggle="tab"
+                href="#contact"
+                role="tab"
+                aria-controls="contact"
+                aria-selected="false"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <!-- Resume Tab -->
+            <div
+              class="tab-pane fade show active"
+              id="resume"
+              role="tabpanel"
+              aria-labelledby="resume-tab"
+            >
+              <!-- Education Section -->
+              <section class="timeline">
+                <div class="title-wrapper">
+                  <div class="icon-box">
+                    <ion-icon name="book-outline"></ion-icon>
+                  </div>
+                  <h3 class="h3"><b>Education</b></h3>
+                </div>
+
+                <ol class="timeline-list">
+                  <li class="timeline-item">
+                    <div class="timeline-item-circle"></div>
+                    <div class="timeline-item-wrapper">
+                      <div class="timeline-item-content">
+                        <h4 class="timeline-item-title">
+                          Pamulang University, Tangerang Selatan, Indonesia
+                        </h4>
+                        <span>2022 — Present</span>
+                        <p class="timeline-text">
+                          I am currently pursuing a Bachelor's degree in
+                          Informatics Engineering, where I am learning the
+                          fundamentals of software development, database
+                          management, and cutting-edge technologies. I actively
+                          hone my technical and creative skills through hands-on
+                          projects and team collaborations.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="timeline-item">
+                    <div class="timeline-item-circle"></div>
+                    <div class="timeline-item-wrapper">
+                      <div class="timeline-item-content">
+                        <h4 class="timeline-item-title">
+                          Senior High School An-Nurmaniyah, Tangerang, Indonesia
+                        </h4>
+                        <span>2019 — 2022</span>
+                        <p class="timeline-text">
+                          Here, I built a strong academic foundation,
+                          particularly in natural sciences. I was also actively
+                          involved in extracurricular activities, which helped
+                          me develop leadership, teamwork, and time management
+                          skills.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ol>
+              </section>
+
+              <!-- Experience Section -->
+              <section class="timeline">
+                <div class="title-wrapper">
+                  <div class="icon-box">
+                    <ion-icon name="briefcase-outline"></ion-icon>
+                  </div>
+                  <h3 class="h3"><b>Organization</b></h3>
+                </div>
+
+                <ol class="timeline-list">
+                  <li class="timeline-item">
+                    <div class="timeline-item-circle"></div>
+                    <div class="timeline-item-wrapper">
+                      <div class="timeline-item-content">
+                        <h4 class="timeline-item-title">
+                          Informatics Study Club, Pamulang University
+                        </h4>
+                        <span>May 2024 — Present</span>
+                        <p class="timeline-text">
+                          Actively participating in weekly sessions to learn and
+                          implement web development using HTML, CSS, JavaScript,
+                          and related frameworks. Collaborating with peers to
+                          solve technical challenges and staying updated on the
+                          latest web technologies.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="timeline-item">
+                    <div class="timeline-item-circle"></div>
+                    <div class="timeline-item-wrapper">
+                      <div class="timeline-item-content">
+                        <h4 class="timeline-item-title">
+                          Google Developer Student Club, UIN Syarif Hidayatullah
+                          Jakarta
+                        </h4>
+                        <span>November 2023 — June 2024</span>
+                        <p class="timeline-text">
+                          Engaged in weekly Android Development classes and
+                          selected as the best member. Learned the fundamentals
+                          of Android app development using Kotlin and
+                          participated in mentoring sessions to discuss best
+                          practices in mobile development.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="timeline-item">
+                    <div class="timeline-item-circle"></div>
+                    <div class="timeline-item-wrapper">
+                      <div class="timeline-item-content">
+                        <h4 class="timeline-item-title">
+                          OSIS Senior High School An-Nurmaniyah
+                        </h4>
+                        <span>October 2019 — October 2021</span>
+                        <p class="timeline-text">
+                          Managed first aid equipment and medications in the
+                          school clinic. Documented OSIS activities through
+                          photos and videos, and contributed to organizing
+                          events during the pandemic.
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ol>
+              </section>
+            </div>
+
+            <!-- Portfolio Tab -->
+            <div
+              class="tab-pane fade"
+              id="portfolio"
+              role="tabpanel"
+              aria-labelledby="portfolio-tab"
+            >
+              <!-- Portfolio Section -->
+              <div class="portfolio-container">
+                <!-- Portfolio Card 1 -->
+                <div class="portfolio-card">
+                  <img
+                    src="/assets/img/Projects/YGGDRASIL.webp"
+                    alt="Project 1"
+                    class="portfolio-card-image"
+                  />
+                  <div class="portfolio-card-body">
+                    <h5 class="portfolio-card-title">YGGDRASIL</h5>
+                    <p class="portfolio-card-description">Library website</p>
+                    <a
+                      target="_blank"
+                      href="https://github.com/tirtadhi/YGGDRASIL"
+                      class="btn"
+                      >View Project</a
+                    >
+                  </div>
+                </div>
+
+                <!-- Portfolio Card 2 -->
+                <div class="portfolio-card">
+                  <img
+                    src="/assets/img/Projects/tg-bsdt.webp"
+                    alt="Project 2"
+                    class="portfolio-card-image"
+                  />
+                  <div class="portfolio-card-body">
+                    <h5 class="portfolio-card-title">HarvestTech</h5>
+                    <p class="portfolio-card-description">CRUD Mobile App</p>
+                    <a
+                      target="_blank"
+                      href="https://github.com/tirtadhi/Tugas_Kelompok_BasisData"
+                      class="btn"
+                      >View Project</a
+                    >
+                  </div>
+                </div>
+
+                <!-- Portfolio Card 3 -->
+                <div class="portfolio-card">
+                  <img
+                    src="/assets/img/Projects/web-isc.webp"
+                    alt="Project 3"
+                    class="portfolio-card-image"
+                  />
+                  <div class="portfolio-card-body">
+                    <h5 class="portfolio-card-title">WEB ISC</h5>
+                    <p class="portfolio-card-description">
+                      Organization Website
+                    </p>
+                    <a
+                      target="_blank"
+                      href="https://github.com/tirtadhi/web-ISC"
+                      class="btn"
+                      >View Project</a
+                    >
+                  </div>
+                </div>
+
+                <!-- Portfolio Card 4 -->
+                <div class="portfolio-card">
+                  <img
+                    src="/assets/img/Projects/11express.webp"
+                    alt="Project 4"
+                    class="portfolio-card-image"
+                  />
+                  <div class="portfolio-card-body">
+                    <h4 class="portfolio-card-title">11 Express</h4>
+                    <p class="portfolio-card-description">Company Website</p>
+                    <a
+                      target="_blank"
+                      href="https://github.com/tirtadhi/Team-11"
+                      class="btn"
+                      >View Project</a
+                    >
+                  </div>
+                </div>
+
+                <!-- Portfolio Card 5 -->
+                <div class="portfolio-card">
+                  <img
+                    src="/assets/img/Projects//DIA.webp"
+                    alt="Project 4"
+                    class="portfolio-card-image"
+                  />
+                  <div class="portfolio-card-body">
+                    <h4 class="portfolio-card-title">DIA</h4>
+                    <p class="portfolio-card-description">Videography</p>
+                    <a
+                      target="_blank"
+                      href="https://www.instagram.com/p/CsiuL9UOjmV/"
+                      class="btn"
+                      >View Project</a
+                    >
+                  </div>
+                </div>
+
+                <!-- Portfolio Card 6 -->
+                <div class="portfolio-card">
+                  <img
+                    src="/assets/img/Projects/JCC.webp"
+                    alt="Project 4"
+                    class="portfolio-card-image"
+                  />
+                  <div class="portfolio-card-body">
+                    <h4 class="portfolio-card-title">Trip To JCC</h4>
+                    <p class="portfolio-card-description">Videography</p>
+                    <a
+                      target="_blank"
+                      href="https://www.instagram.com/p/CZvM5Jvl4yS/?utm_source=ig_web_copy_link"
+                      class="btn"
+                      >View Project</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sertifikat Tab -->
+            <div
+              class="tab-pane fade"
+              id="sertif"
+              role="tabpanel"
+              aria-labelledby="sertif-tab"
+            >
+              <!-- Sertifikat Card Section -->
+              <div class="sertifikat-container">
+                <!-- Sertifikat Card 1 -->
+                <div class="sertifikat-card">
+                  <img
+                    src="/assets/img/Projects/andro.webp"
+                    alt="Certificate 1"
+                    class="sertifikat-card-image"
+                  />
+                  <div class="preview-text">
+                    <a
+                      target="_blank"
+                      href="https://www.dicoding.com/certificates/4EXGKR6WEZRL"
+                    >
+                      <i class="bi bi-eye"></i>
+                    </a>
+                  </div>
+                </div>
+                <!-- Sertifikat Card 2 -->
+                <div class="sertifikat-card">
+                  <img
+                    src="/assets/img/Projects/ML.webp"
+                    alt="Certificate 2"
+                    class="sertifikat-card-image"
+                  />
+                  <div class="preview-text">
+                    <a
+                      target="_blank"
+                      href="https://www.dicoding.com/certificates/GRX53GQ03Z0M"
+                    >
+                      <i class="bi bi-eye"></i>
+                    </a>
+                  </div>
+                </div>
+                <!-- Sertifikat Card 3 -->
+                <div class="sertifikat-card">
+                  <img
+                    src="/assets/img/Projects/web.webp"
+                    alt="Certificate 3"
+                    class="sertifikat-card-image"
+                  />
+                  <div class="preview-text">
+                    <a
+                      target="_blank"
+                      href="https://www.dicoding.com/certificates/NVP7O8VKVPR0"
+                    >
+                      <i class="bi bi-eye"></i>
+                    </a>
+                  </div>
+                </div>
+                <!-- Sertifikat Card 4 -->
+                <div class="sertifikat-card">
+                  <img
+                    src="/assets/img/Projects//cyberbs.webp"
+                    alt="Certificate 1"
+                    class="sertifikat-card-image"
+                  />
+                  <div class="preview-text">
+                    <a
+                      target="_blank"
+                      href="https://itbox.id/certificate-verifier/139311373-139508576-1276E9391/"
+                    >
+                      <i class="bi bi-eye"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Tab -->
+            <div
+              class="tab-pane fade"
+              id="contact"
+              role="tabpanel"
+              aria-labelledby="contact-tab"
+            >
+              <!-- Contact Form -->
+              <div
+                class="alert alert-success alert-dismissible fade show d-none my-alert"
+                role="alert"
+              >
+                <strong>Thank You!</strong> Your message has been received.
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="alert"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <form action="#" method="POST" name="tirtadhi-contact-form">
+                <div class="row">
+                  <!-- Name Field -->
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label for="name" class="form-label">Your Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        name="nama"
+                        placeholder="Enter your name"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Email Field -->
+                  <div class="col-md-6">
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Your Email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Message Field -->
+                <div class="mb-3">
+                  <label for="message" class="form-label">Your Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="4"
+                    name="pesan"
+                    placeholder="Type your message"
+                    required
+                  ></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary btn-kirim w-100">
+                  Send Message
+                </button>
+                <button
+                  class="btn btn-primary btn-loading d-none"
+                  type="button"
+                  disabled
+                >
+                  <span
+                    class="spinner-border spinner-border-sm"
+                    aria-hidden="true"
+                  ></span>
+                  <span role="status">Loading...</span>
+                </button>
+              </form>
+            </div>
+            <!-- END CONTACT -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- form -->
+    <script>
+      const scriptURL =
+        'https://script.google.com/macros/s/AKfycbxc4UgGPPgHFK1wCod8ihyecLk3MnaYyPUDi8eYCzlxa7LnbJq4MoYKjZjnI_2I5KDxYQ/exec';
+      const form = document.forms['tirtadhi-contact-form'];
+      const btnKirim = document.querySelector('.btn-kirim');
+      const btnLoading = document.querySelector('btn-loading');
+      const myAlert = document.querySelector('.my-alert');
+
+      document.addEventListener('DOMContentLoaded', function () {
+        const form = document.forms['tirtadhi-contact-form'];
+        const btnKirim = document.querySelector('.btn-kirim');
+        const btnLoading = document.querySelector('.btn-loading');
+        const myAlert = document.querySelector('.my-alert');
+
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+
+          console.log('Form Submitted!'); // Debugging
+
+          // Pastikan elemen ditemukan sebelum mengakses classList
+          if (btnLoading && btnKirim) {
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+          }
+
+          fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then((response) => {
+              console.log('Response received:', response);
+
+              if (btnLoading && btnKirim) {
+                btnLoading.classList.toggle('d-none');
+                btnKirim.classList.toggle('d-none');
+              }
+
+              myAlert.classList.remove('d-none');
+              form.reset();
+            })
+            .catch((error) => console.error('Error!', error.message));
+        });
+      });
+    </script>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

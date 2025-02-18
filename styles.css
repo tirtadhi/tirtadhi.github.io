@@ -1,0 +1,460 @@
+/* Default Light Mode */
+:root {
+  --bg-color: #f5f5f5;
+  --text-color: #333;
+  --card-bg: #fff;
+  --card-border: #ddd;
+}
+
+.dark-mode {
+  --bg-color: #121212;
+  --text-color: #f5f5f5; /* Warna teks terang pada dark mode */
+  --card-bg: #1e1e1e;
+  --card-border: #444;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s, color 0.3s;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Pastikan semua elemen teks, termasuk text-muted, mengikuti warna teks */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+.info p,
+.socials a,
+.profile-description,
+.text-muted,
+span {
+  color: var(--text-color) !important;
+  transition: color 0.3s;
+}
+
+/* Card */
+.card {
+  background: var(--card-bg);
+  transition: background 0.3s;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card a {
+  color: var(--text-color) !important;
+}
+
+.card a:hover {
+  color: #007bff;
+}
+h2.mt-3 {
+  font-size: 1.5rem; /* Ukuran font yang lebih besar */
+  font-weight: 700; /* Font yang lebih tebal untuk menonjolkan nama */
+  color: var(--text-color); /* Gunakan warna teks yang sesuai dengan mode */
+  letter-spacing: 1px; /* Memberi jarak antar huruf sedikit */
+  text-transform: uppercase; /* Mengubah huruf menjadi kapital semua */
+  text-align: center; /* Menyusun teks ke tengah */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Menambahkan efek bayangan pada teks */
+  margin-top: 1.5rem; /* Menambahkan margin atas jika diperlukan */
+}
+/* Links */
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #007bff;
+}
+
+/* Socials */
+.socials a {
+  text-decoration: none;
+  font-size: 18px; /* Menyesuaikan ukuran font untuk link sosial media */
+  color: var(--text-color);
+  margin-right: 15px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.socials i {
+  margin-right: 8px;
+  font-size: 18px; /* Mengurangi ukuran ikon sosial media */
+  transition: color 0.3s;
+}
+
+/* Tombol Toggle Mode */
+#toggleMode {
+  background-color: #42a5f5;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#toggleMode:hover {
+  background-color: #1e88e5;
+}
+/* Kolom Kanan */
+.right-column {
+  flex: 2;
+  padding: 20px;
+  background: var(--card-bg);
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px var(--shadow);
+}
+
+/* Tabs */
+.nav-tabs {
+  border-bottom: 2px solid #ddd;
+}
+
+.nav-tabs .nav-link {
+  border: none;
+  padding: 12px 20px;
+  color: #555;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: transparent;
+  border-radius: 0px;
+  transition: color 0.3s, border-color 0.3s, padding 0.3s;
+  position: relative;
+  margin-right: 10px;
+}
+
+.nav-tabs .nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #42a5f5;
+  transition: width 0.3s ease;
+}
+
+.nav-tabs .nav-link:hover {
+  color: #42a5f5;
+  padding-bottom: 18px;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #42a5f5; /* Biru cerah untuk tab aktif */
+  color: white;
+  border-radius: 5px;
+  border-bottom: 3px solid #1e88e5; /* Garis bawah aktif biru gelap */
+  margin-bottom: 10px;
+}
+
+.nav-tabs .nav-link.active::after {
+  width: 100%;
+}
+
+/* Tab Content */
+.tab-content {
+  margin-top: 20px;
+}
+
+.tab-pane {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: var(--card-bg);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  color: var(--text-color);
+}
+
+.tab-pane h3 {
+  color: #42a5f5;
+  font-size: 24px;
+}
+
+.tab-pane p {
+  font-size: 16px;
+  color: #757575;
+}
+
+.tab-pane a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.tab-pane a:hover {
+  text-decoration: underline;
+  color: #1e88e5;
+}
+
+/* Timeline Styles */
+.timeline {
+  margin-top: 30px;
+}
+
+.timeline-list {
+  list-style-type: none;
+  padding: 0;
+  position: relative;
+}
+
+/* Connects the timeline points */
+.timeline-list::before {
+  content: '';
+  position: absolute;
+  left: 18px;
+  top: 0;
+  width: 2px;
+  background-color: #42a5f5;
+  height: 100%;
+}
+
+/* Each Timeline Item */
+.timeline-item {
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 30px;
+}
+
+.timeline-item-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.timeline-item-circle {
+  width: 18px;
+  height: 18px;
+  background-color: #42a5f5;
+  border-radius: 50%;
+  position: absolute;
+  left: 10px;
+}
+
+.timeline-item-content {
+  padding-left: 20px;
+}
+
+.timeline-item-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.timeline-item span {
+  display: block;
+  font-size: 14px;
+  color: #757575;
+  margin-bottom: 10px;
+}
+
+.timeline-text {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Remove line for last item */
+.timeline-item:last-child::before {
+  display: none;
+}
+
+/* Container for portfolio section */
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Center the items horizontally */
+  padding-top: 20px;
+}
+
+/* Individual portfolio card */
+.portfolio-card {
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 30%; /* This ensures 3 cards per row */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  border: 2px solid var(--card-border);
+}
+
+/* Image inside the card */
+.portfolio-card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Body content inside the card */
+.portfolio-card-body {
+  padding: 20px;
+}
+
+/* Title of the project */
+.portfolio-card-title {
+  font-size: 1.25rem; /* Ubah ukuran font agar lebih kecil */
+  font-weight: 600; /* Sesuaikan ketebalan font agar lebih ringan */
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+/* Description text */
+.portfolio-card-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Button style */
+.btn {
+  background-color: #42a5f5;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Button Hover */
+.btn:hover {
+  background-color: #1e88e5;
+  color: white !important;
+}
+
+/* Hover effect for the card */
+.portfolio-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Responsive Design - For smaller screens */
+@media (max-width: 768px) {
+  .portfolio-card {
+    width: 48%; /* 2 cards per row on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-card {
+    width: 100%; /* 1 card per row on small screens */
+  }
+}
+
+/* Sertifikat Container */
+.sertifikat-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Menyusun card secara horizontal di tengah */
+  padding-top: 20px;
+}
+
+/* Sertifikat Card */
+.sertifikat-card {
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px; /* Menentukan lebar card */
+  height: 210px; /* Menentukan tinggi card */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 20px; /* Memberikan jarak antar card */
+}
+
+/* Sertifikat Card Image */
+.sertifikat-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Gambar akan menutupi seluruh card dengan proporsi yang sesuai */
+  transition: opacity 0.3s ease; /* Menambahkan animasi pada gambar */
+}
+
+/* Teks Preview */
+.preview-text {
+  position: absolute;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background: rgba(0, 0, 0, 0.5); /* Latar belakang hitam transparan */
+  padding: 10px 20px;
+  border-radius: 5px;
+  visibility: hidden; /* Menyembunyikan teks saat hover tidak aktif */
+  pointer-events: none; /* Agar tidak mengganggu klik pada gambar */
+  text-align: center;
+}
+
+/* Menampilkan teks saat hover pada card */
+.sertifikat-card:hover .preview-text {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+/* Hover effect untuk card */
+.sertifikat-card:hover {
+  transform: translateY(
+    -10px
+  ); /* Efek card bergerak sedikit ke atas saat hover */
+}
+
+/* Styling untuk Contact Form */
+#contact {
+  padding: 30px;
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  color: var(--text-color);
+}
+
+/* Form fields styling */
+.form-control {
+  border-radius: 8px;
+  padding: 15px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+/* Border color change on focus */
+.form-control:focus {
+  border-color: #42a5f5;
+  box-shadow: 0 0 5px rgba(66, 165, 245, 0.6);
+}
+
+/* Styling untuk label form */
+.form-label {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+/* Styling tombol kirim */
+.btn {
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+/* Tombol kirim hover */
+.btn:hover {
+  background-color: #1e88e5;
+}
+
+/* Responsif: Menyesuaikan form dengan layar kecil */
+@media (max-width: 768px) {
+  .form-control {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
