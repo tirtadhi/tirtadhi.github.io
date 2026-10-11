@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tirta Adhi Samsara — Web Developer & Cyber Security Enthusiast</title>
+<meta name="description" content="Portofolio Tirta Adhi Samsara, Web Developer dan Cyber Security Enthusiast dari Tangerang. Lihat project, pengalaman, dan kontak.">
+<meta name="author" content="Tirta Adhi Samsara">
+<meta property="og:title" content="Tirta Adhi Samsara — Web Developer & Cyber Security Enthusiast">
+<meta property="og:description" content="Portofolio pribadi Tirta Adhi Samsara.">
+<meta property="og:image" content="assets/img/pp.webp">
+<meta property="og:url" content="https://tirtadhi.site">
+<meta name="google-site-verification" content="lKVJ3_8agV_OLEfYbb1fpQIop1sLCriqbN7tXs6Eaoo">
+<meta name="google-site-verification" content="q4vGGxOqPBqSnBua97qOgZWnCZFyFr4e-OEQes0wGDg">
+<link rel="shortcut icon" href="assets/img/icon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--deep:#04222b;--sea:#0e7c86;--foam:#d8f3ee;--sand:#f4c97a;--ink:#e8f6f3;--mut:#8fb8b6;--line:rgba(216,243,238,.16);--panel:rgba(4,34,43,.72)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--deep);color:var(--ink);font:400 1.05rem/1.65 'Instrument Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+#scene{position:fixed;inset:0;width:100%;height:100%;z-index:0}
+main,header,footer{position:relative;z-index:1}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--sand);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+nav{position:fixed;top:0;left:0;right:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:14px clamp(20px,5vw,48px);background:linear-gradient(var(--deep),transparent)}
+nav b{font:800 1.1rem 'Bricolage Grotesque'}
+nav div{display:flex;gap:clamp(14px,3vw,30px)}
+nav a{text-decoration:none;font-weight:500;font-size:.95rem;color:var(--mut)}
+nav a:hover{color:var(--sand)}
+.hero{min-height:100svh;display:flex;align-items:center}
+.hero .wrap{width:100%}
+h1,h2,h3{font-family:'Bricolage Grotesque',sans-serif;line-height:1.02;letter-spacing:-.02em}
+h1{font-size:clamp(3.2rem,9.5vw,7.6rem);font-weight:800;max-width:9ch}
+.role{margin-top:22px;font-size:clamp(1.1rem,2.2vw,1.45rem);color:var(--foam);max-width:30ch;min-height:2.4em}
+.role em{font-style:normal;color:var(--sand);border-right:2px solid var(--sand);padding-right:3px}
+.cta{margin-top:30px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 24px;border-radius:999px;font-weight:600;text-decoration:none;border:1.5px solid var(--foam);transition:.2s}
+.btn.p{background:var(--sand);border-color:var(--sand);color:var(--deep)}
+.btn:hover{transform:translateY(-2px);background:var(--foam);color:var(--deep);border-color:var(--foam)}
+.hint{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);font-size:.85rem;color:var(--mut)}
+section{padding:clamp(72px,12vw,140px) 0}
+.pane{background:var(--panel);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:28px;padding:clamp(24px,5vw,56px)}
+h2{font-size:clamp(2.2rem,5.5vw,4rem);font-weight:800;margin-bottom:28px}
+.about{display:grid;grid-template-columns:220px 1fr;gap:clamp(24px,5vw,56px);align-items:start}
+.about img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:50%;border:3px solid var(--sand)}
+.about p{max-width:60ch;color:var(--foam)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.chips span{padding:6px 14px;border:1px solid var(--line);border-radius:999px;font-size:.9rem;color:var(--mut)}
+.path{margin-top:48px;border-left:2px solid var(--line);padding-left:28px;display:grid;gap:30px}
+.path article{position:relative}
+.path article::before{content:"";position:absolute;left:-36px;top:9px;width:14px;height:14px;border-radius:50%;background:var(--sand);box-shadow:0 0 0 5px var(--deep)}
+.path h3{font-size:1.25rem;letter-spacing:0}
+.path time{display:block;color:var(--sand);font-size:.9rem;margin:2px 0 6px}
+.path p{color:var(--mut);max-width:62ch;font-size:.98rem}
+.feat{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:20px}
+.card{display:block;text-decoration:none;background:var(--panel);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--line);border-radius:22px;overflow:hidden;transition:transform .25s,border-color .25s}
+.card:hover{transform:translateY(-6px);border-color:var(--sand)}
+.card img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+.card div{padding:18px 20px 22px}
+.card h3{font-size:1.35rem;letter-spacing:0}
+.card p{color:var(--mut);font-size:.95rem;margin:4px 0 12px}
+.tags{font-size:.85rem;color:var(--sand)}
+.more{margin-top:44px;font:800 1.5rem 'Bricolage Grotesque'}
+.list a{display:grid;grid-template-columns:minmax(150px,1fr) 2fr minmax(120px,1fr);gap:16px;padding:18px 4px;border-bottom:1px solid var(--line);text-decoration:none;transition:.2s}
+.list a:hover{padding-left:16px;background:rgba(216,243,238,.06)}
+.list b{font-weight:600}
+.list span{color:var(--mut);font-size:.95rem}
+.list i{font-style:normal;color:var(--sand);font-size:.88rem;text-align:right}
+form{display:grid;gap:14px;max-width:560px}
+label{display:grid;gap:6px;font-weight:500}
+input,textarea{font:inherit;color:var(--ink);background:rgba(4,34,43,.6);border:1.5px solid var(--line);border-radius:14px;padding:13px 16px}
+input:focus,textarea:focus{outline:none;border-color:var(--sand)}
+textarea{min-height:130px;resize:vertical}
+button.btn{cursor:pointer;font:inherit;font-weight:600;justify-self:start}
+#status{min-height:1.5em;color:var(--sand)}
+.soc{display:flex;gap:22px;flex-wrap:wrap;margin-top:28px}
+.soc a{color:var(--foam)}
+footer{padding:40px 0 60px;color:var(--mut);font-size:.9rem}
+@media(max-width:720px){.about{grid-template-columns:1fr}.about img{max-width:150px}.list a{grid-template-columns:1fr;gap:2px}.list i{text-align:left}nav div a:nth-child(n+4){display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<canvas id="scene" aria-hidden="true"></canvas>
+<nav aria-label="Navigasi utama"><b>Tirta</b><div><a href="#tentang">Tentang</a><a href="#perjalanan">Perjalanan</a><a href="#project">Project</a><a href="#kontak">Kontak</a></div></nav>
+<header class="hero"><div class="wrap">
+<h1>Tirta Adhi Samsara</h1>
+<p class="role">Saya seorang <em id="typed">Web Developer</em></p>
+<div class="cta"><a class="btn p" href="#project">Lihat project</a><a class="btn" href="#kontak">Hubungi saya</a></div>
+</div><span class="hint">Gerakkan mouse atau sentuh layar untuk memutar tetesan</span></header>
+<main>
+<section id="tentang"><div class="wrap"><div class="pane about">
+<img src="assets/img/pp.webp" alt="Foto Tirta Adhi Samsara" width="220" height="220">
+<div><h2>Tentang saya</h2>
+<p>Mahasiswa Teknik Informatika Universitas Pamulang yang tinggal di Tangerang. Saya membangun website dan aplikasi Android, serta sedang mendalami keamanan siber, machine learning, dan desain UI/UX.</p>
+<div class="chips"><span>Web Development</span><span>Cyber Security</span><span>Mobile Development</span><span>Machine Learning</span><span>UI/UX Design</span></div></div>
+</div></div></section>
+
+<section id="perjalanan"><div class="wrap"><div class="pane"><h2>Perjalanan</h2>
+<div class="path">
+<article><h3>Magang di TVRI Stasiun DKI Jakarta</h3><time>April 2025 – Juni 2025</time><p>Merancang dan membangun website sistem inventaris untuk mendukung website SAKTI.</p></article>
+<article><h3>Informatics Study Club, Universitas Pamulang</h3><time>Mei 2024 – April 2025</time><p>Ikut sesi mingguan untuk belajar dan menerapkan pengembangan web dengan HTML, CSS, JavaScript, dan framework terkait, sambil berkolaborasi memecahkan masalah teknis.</p></article>
+<article><h3>Google Developer Student Club, UIN Syarif Hidayatullah Jakarta</h3><time>November 2023 – Juni 2024</time><p>Mengikuti kelas Android Development mingguan dan terpilih sebagai anggota terbaik. Mempelajari dasar aplikasi Android dengan Kotlin.</p></article>
+<article><h3>S1 Teknik Informatika, Universitas Pamulang</h3><time>2022 – sekarang</time><p>Belajar dasar pengembangan perangkat lunak, manajemen basis data, dan teknologi terbaru lewat project dan kerja tim.</p></article>
+<article><h3>OSIS SMA An-Nurmaniyah</h3><time>Oktober 2019 – Oktober 2021</time><p>Mengelola perlengkapan P3K di klinik sekolah, mendokumentasikan kegiatan lewat foto dan video, dan membantu menyelenggarakan acara selama pandemi.</p></article>
+</div></div></div></section>
+
+<section id="project"><div class="wrap"><h2>Project</h2>
+<div class="feat" id="feat"></div>
+<h3 class="more">Project lainnya</h3><div class="list" id="list"></div>
+</div></section>
+
+<section id="kontak"><div class="wrap"><div class="pane"><h2>Ayo ngobrol</h2>
+<form id="f" name="tirtadhi-contact-form">
+<label>Nama<input name="nama" required autocomplete="name"></label>
+<label>Email<input name="email" type="email" required autocomplete="email"></label>
+<label>Pesan<textarea name="pesan" required></textarea></label>
+<button class="btn p" type="submit">Kirim pesan</button><p id="status" role="status"></p>
+</form>
+<div class="soc"><a href="https://www.linkedin.com/in/tirtaadhisamsara" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/tirtadhi" target="_blank" rel="noopener">GitHub</a><a href="https://instagram.com/tirtadhi" target="_blank" rel="noopener">Instagram</a></div>
+</div></div></section>
+</main>
+<footer><div class="wrap">© 2026 Tirta Adhi Samsara · Tangerang, Indonesia</div></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+const G='https://github.com/tirtadhi/';
+const P=[
+['YGGDRASIL','Sistem manajemen perpustakaan dengan antarmuka yang mudah dipakai','PHP · MySQL · JavaScript','YGGDRASIL','assets/img/Projects/YGGDRASIL.webp'],
+['HarvestTech','Aplikasi mobile CRUD lengkap dengan Firebase','Kotlin · Firebase · Android','Tugas_Kelompok_BasisData','assets/img/Projects/tg-bsdt.webp'],
+['WEB ISC','Website Informatics Study Club dengan desain glassmorphism','HTML · Bootstrap 5 · JavaScript','web-ISC','assets/img/Projects/web-isc.webp'],
+['11 Express','Website company profile yang responsif','SCSS · Bootstrap · JavaScript','Team-11','assets/img/Projects/11express.webp'],
+['ZOE Hotel','Sistem pemesanan hotel modern','TypeScript · React · Node.js','ZOEHotel'],
+['Sistem Inventaris','Sistem inventaris untuk TVRI Jakarta (project magang)','SCSS · PHP · MySQL','SistemInventaris'],
+['Lustrous Boutique','Platform e-commerce lengkap untuk butik fashion','PHP · MySQL · Bootstrap','Lustrous-Boutique'],
+['Beritarium','Portal berita dengan Laravel','Laravel · Blade · MySQL','beritarium'],
+['Customer Segmentation','Analisis segmentasi pelanggan dengan machine learning','Python · TensorFlow · Pandas','CustomerSegmentation-ML'],
+['Android Beginner App','Submission Dicoding: aplikasi Android untuk pemula','Kotlin · Android Studio','Submission_Belajar-Membuat-Aplikasi-Android-untuk-Pemula'],
+['Wedding Invitations','Website undangan pernikahan','HTML · CSS · JavaScript','website-wedding-invitations'],
+['Instagram Follow Checker','Cek siapa yang tidak follow balik, otomatis dengan Python','Python · Automation','Instagram-Follow-Back-Checker'],
+['Quiz Kemerdekaan','Game kuis interaktif seputar kemerdekaan Indonesia','JavaScript · HTML · CSS','GameQuizKemerdekaan'],
+['Management Web CRUD','Aplikasi CRUD lengkap dengan PHP','PHP · MySQL · Bootstrap','management-web-application-CRUD'],
+['Web Programming Basics','Submission Dicoding: dasar pemrograman web','HTML5 · CSS3 · Responsive','Submission-Belajar-Dasar-Pemrograman-Web-Dicoding']];
+const feat=document.getElementById('feat'),list=document.getElementById('list');
+P.forEach(p=>{const[t,d,s,r,img]=p,u=G+r;
+ if(img)feat.insertAdjacentHTML('beforeend',`<a class="card" href="${u}" target="_blank" rel="noopener"><img src="${img}" alt="Tampilan ${t}" loading="lazy"><div><h3>${t}</h3><p>${d}</p><span class="tags">${s}</span></div></a>`);
+ else list.insertAdjacentHTML('beforeend',`<a href="${u}" target="_blank" rel="noopener"><b>${t}</b><span>${d}</span><i>${s}</i></a>`)});
+
+// efek mengetik
+const el=document.getElementById('typed'),W=['Web Developer','Cyber Security Enthusiast','Frontend Developer','Problem Solver','Creative Coder'];
+let wi=0,ci=0,del=false;
+(function tick(){const w=W[wi];ci+=del?-1:1;el.textContent=w.slice(0,ci);let t=del?45:95;
+ if(!del&&ci===w.length){del=true;t=1800}else if(del&&ci===0){del=false;wi=(wi+1)%W.length;t=300}setTimeout(tick,t)})();
+
+// form kontak (Google Apps Script yang sama dengan situs lama)
+const URL_G='https://script.google.com/macros/s/AKfycbxc4UgGPPgHFK1wCod8ihyecLk3MnaYyPUDi8eYCzlxa7LnbJq4MoYKjZjnI_2I5KDxYQ/exec';
+const f=document.getElementById('f'),st=document.getElementById('status');
+f.addEventListener('submit',e=>{e.preventDefault();st.textContent='Mengirim…';
+ fetch(URL_G,{method:'POST',body:new FormData(f)}).then(()=>{st.textContent='Pesan terkirim. Terima kasih, saya akan membalas secepatnya.';f.reset()}).catch(()=>{st.textContent='Pesan gagal terkirim. Periksa koneksi lalu coba lagi.'})});
+
+// scene 3D: tetesan air + kerangka wireframe
+(function(){
+ const cv=document.getElementById('scene');
+ let R;try{R=new THREE.WebGLRenderer({canvas:cv,antialias:true,alpha:true})}catch(e){return}
+ R.setPixelRatio(Math.min(devicePixelRatio,2));
+ const S=new THREE.Scene(),C=new THREE.PerspectiveCamera(45,1,.1,50);C.position.z=6;
+ S.add(new THREE.AmbientLight(0x6fd0d0,.5));
+ const L1=new THREE.PointLight(0xf4c97a,2.2,30);L1.position.set(4,3,5);S.add(L1);
+ const L2=new THREE.PointLight(0x2fe0e0,2,30);L2.position.set(-5,-2,3);S.add(L2);
+ const g=new THREE.IcosahedronGeometry(1.5,20),base=g.attributes.position.array.slice(),pos=g.attributes.position;
+ const orb=new THREE.Mesh(g,new THREE.MeshStandardMaterial({color:0x0e7c86,metalness:.55,roughness:.16,emissive:0x03343c}));
+ const cage=new THREE.Mesh(new THREE.IcosahedronGeometry(2.05,1),new THREE.MeshBasicMaterial({color:0xd8f3ee,wireframe:true,transparent:true,opacity:.22}));
+ const ring=new THREE.Mesh(new THREE.TorusGeometry(2.7,.012,8,160),new THREE.MeshBasicMaterial({color:0xf4c97a}));ring.rotation.x=1.2;
+ const N=260,pp=new Float32Array(N*3);for(let i=0;i<N;i++){const r=3+Math.random()*3,a=Math.random()*6.283,b=Math.acos(2*Math.random()-1);pp[i*3]=r*Math.sin(b)*Math.cos(a);pp[i*3+1]=r*Math.cos(b);pp[i*3+2]=r*Math.sin(b)*Math.sin(a)}
+ const pg=new THREE.BufferGeometry();pg.setAttribute('position',new THREE.BufferAttribute(pp,3));
+ const pts=new THREE.Points(pg,new THREE.PointsMaterial({color:0xd8f3ee,size:.035,transparent:true,opacity:.7}));
+ const grp=new THREE.Group();grp.add(orb,cage,ring);S.add(grp,pts);
+ let mx=0,my=0,tx=0,ty=0,sy=0;
+ addEventListener('pointermove',e=>{mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5});
+ addEventListener('scroll',()=>{sy=scrollY/Math.max(1,document.body.scrollHeight-innerHeight)});
+ function size(){const w=innerWidth,h=innerHeight;R.setSize(w,h,false);C.aspect=w/h;C.updateProjectionMatrix()}
+ addEventListener('resize',size);size();
+ const still=matchMedia('(prefers-reduced-motion:reduce)').matches;
+ function frame(t){t*=.001;
+  if(!still)for(let i=0;i<pos.count;i++){const x=base[i*3],y=base[i*3+1],z=base[i*3+2];
+   const d=1+.13*Math.sin(x*2.2+t*1.1)*Math.cos(y*2.4+t*.9)+.09*Math.sin(z*3+t*1.4);
+   pos.setXYZ(i,x*d,y*d,z*d)}
+  pos.needsUpdate=true;g.computeVertexNormals();
+  tx+=(mx-tx)*.05;ty+=(my-ty)*.05;
+  const wide=innerWidth>820;
+  grp.position.x=(wide?2.2:0)-sy*(wide?3.6:0);
+  grp.position.y=(wide?0:1.6)-sy*1.2;
+  grp.scale.setScalar((wide?1:.6)*(1-sy*.35));
+  grp.rotation.y=t*.15+tx*2;grp.rotation.x=ty*1.2;
+  cage.rotation.y=-t*.12;ring.rotation.z=t*.2;pts.rotation.y=t*.02;
+  R.render(S,C);requestAnimationFrame(frame)}
+ requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>
